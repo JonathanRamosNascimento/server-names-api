@@ -44,7 +44,9 @@ app.get('/:text', (req, res) => {
                 message: 'Internal error.'
             });
         }
-        return res.status(200).json(data);
+        // setTimeout(() => {
+            return res.status(200).json(data)
+        // }, 2000);
     });
 })
 
